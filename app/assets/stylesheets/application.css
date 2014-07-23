@@ -1,0 +1,39 @@
+   h1,h2, .pine{
+  text-align: center;
+    color: #0F4561
+}
+  *{
+    font-family: ARIAL;
+  }
+  #progressbar1 {
+  background-color: #314789;
+  border-radius: 23px; 
+  padding: 7px;
+}
+  #progressbar2 {
+  background-color: #314789;
+  border-radius: 23px; 
+  padding: 7px;
+}  #progressbar3 {
+  background-color: #314789;
+  border-radius: 23px; 
+  padding: 7px;
+}
+#progressbar1 > div {
+   background-color: #69F314;
+   width: 95%; 
+   height: 23px;
+   border-radius: 15px;
+}
+#progressbar3 > div {
+   background-color: #69F314;
+   width: 55%; 
+   height: 23px;
+   border-radius: 15px;
+}
+#progressbar2 > div {
+   background-color: #69F314;
+   width: 80%; 
+   height: 23px;
+   border-radius: 15px;
+}
