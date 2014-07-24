@@ -1,22 +1,58 @@
- if params['id'] == '1'
+get '/funbear/1' => 'application#first'
+get '/funbear/2' => 'application#second'
+get '/funbear/3' => 'application#third'
+#progressbar1 {
+  background-color: #314789;
+  border-radius: 23px; 
+  padding: 7px;
+}
+  #progressbar2 {
+  background-color: #314789;
+  border-radius: 23px; 
+  padding: 7px;
+}  #progressbar3 {
+  background-color: #314789;
+  border-radius: 23px; 
+  padding: 7px;
+}
+#progressbar1 > div {
+  background-color: #69F314;
+  width: 95%; 
+  height: 23px;
+  border-radius: 15px;
+}
+#progressbar3 > div {
+  background-color: #69F314;
+  width: 55%; 
+  height: 23px;
+  border-radius: 15px;
+}
+#progressbar2 > div {
+  background-color: #69F314;
+  width: 80%; 
+  height: 23px;
+  border-radius: 15px;
+}
+
+if params['id'] == '1'
       @facebook = 'https://www.facebook.com/pages/Carl-Sagan/7062124866'
       @name = 'Carl Sagan'
       @memberstatus = 'Member since 1970'
       @picture = 'http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2012/2/29/1330525351739/Dr-Carl-Sagan-007.jpg'
       @bio =  'Carl Edward Sagan was an American astronomer, astrophysicist, cosmologist, author, science popularizer and science communicator in astronomy and other natural sciences. His contributions were central to the discovery of the high surface temperatures of Venus. However, he is best known for his contributions to the scientific research of extraterrestrial life, including experimental demonstration of the production of amino acids from basic chemicals by radiation.'
-        @location = ' Brooklyn'
-        @completion = "progressbar1"
+      @location = ' Brooklyn'
+      @completion = "progressbar1"
         
-      elsif params['id'] == '2'
+elsif params['id'] == '2'
       @facebook = 'https://www.facebook.com/pages/Stephen-Hawking/10232774337'
       @name = 'Stephen Hawking'
       @memberstatus = 'Member since 1989'
       @picture = 'http://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Stephen_Hawking.StarChild.jpg/240px-Stephen_Hawking.StarChild.jpg'
       @bio = 'Stephen William Hawking an English theoretical physicist, cosmologist, author and Director of Research at the Centre for Theoretical Cosmology within the University of Cambridge. Among his significant scientific works have been a collaboration with Roger Penrose on gravitational singularity theorems in the framework of general relativity, and the theoretical prediction that black holes emit radiation, often called Hawking radiation. Hawking was the first to set forth a cosmology explained by a union of the general theory of relativity and quantum mechanics. He is a vocal supporter of the many-worlds interpretation of quantum mechanics.'
-        @location = ' United Kingdom'
-        @completion = "progressbar2"
+      @location = ' United Kingdom'
+      @completion = "progressbar2"
         
-      elsif params['id'] == '3'
+elsif params['id'] == '3'
       @facebook = 'https://www.facebook.com/MrKimDotcom'
       @name = 'Kim Dotcom'
       @memberstatus = 'Member since 1992'

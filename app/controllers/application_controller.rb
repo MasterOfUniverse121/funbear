@@ -5,4 +5,21 @@ class ApplicationController < ActionController::Base
   def show
     @app = App.find_by_id(params['id'])
   end
+  
+  def new
+  end
+  
+  def create
+    g = App.new
+    g.facebook = params['facebook']
+    g.name = params['name']
+    g.memberstatus= params['name']
+    g.picture = params['picture']
+    g.name = params['name']
+    g.name = params['name']
+    g.name = params['name']
+    g.save
+    redirect_to "funbear/#{g.id}"
+  end
 end
+
