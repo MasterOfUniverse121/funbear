@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   def show
     if params['id'] == '1'
-      @facebookpage = 'https://www.facebook.com/pages/Carl-Sagan/7062124866'
+      @facebook = 'https://www.facebook.com/pages/Carl-Sagan/7062124866'
       @name = 'Carl Sagan'
       @memberstatus = 'Member since 1970'
       @picture = 'http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2012/2/29/1330525351739/Dr-Carl-Sagan-007.jpg'
@@ -13,7 +13,7 @@ class ApplicationController < ActionController::Base
         @completion = "progressbar1"
         
       elsif params['id'] == '2'
-      @facebookpage = 'https://www.facebook.com/pages/Stephen-Hawking/10232774337'
+      @facebook = 'https://www.facebook.com/pages/Stephen-Hawking/10232774337'
       @name = 'Stephen Hawking'
       @memberstatus = 'Member since 1989'
       @picture = 'http://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Stephen_Hawking.StarChild.jpg/240px-Stephen_Hawking.StarChild.jpg'
@@ -22,7 +22,7 @@ class ApplicationController < ActionController::Base
         @completion = "progressbar2"
         
       elsif params['id'] == '3'
-      @facebookpage = 'https://www.facebook.com/MrKimDotcom'
+      @facebook = 'https://www.facebook.com/MrKimDotcom'
       @name = 'Kim Dotcom'
       @memberstatus = 'Member since 1992'
       @picture = 'http://upload.wikimedia.org/wikipedia/commons/e/e2/Kim_dotcom_crowd_cropped.jpg'
