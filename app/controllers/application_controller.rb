@@ -7,6 +7,7 @@ class ApplicationController < ActionController::Base
   end
   
   def new
+    
   end
   
   def create
@@ -15,11 +16,11 @@ class ApplicationController < ActionController::Base
     g.name = params['name']
     g.memberstatus= params['name']
     g.picture = params['picture']
-    g.name = params['name']
-    g.name = params['name']
-    g.name = params['name']
+    g.bio = params['bio']
+    g.location = params['location']
+    g.completion = params['completion']
     g.save
-    redirect_to "funbear/#{g.id}"
+    redirect_to "/funbear/#{g.id}"
   end
 end
 

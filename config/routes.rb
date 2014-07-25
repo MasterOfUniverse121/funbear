@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   get '/funbear/:id' => 'application#show'
-  get '/funbear/new' => 'application#new'
-  get '/funbear/create' => 'application#create'
+  get '/new_user' => 'application#new'
+  get '/create_user' => 'application#create'
 end
