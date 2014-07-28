@@ -28,7 +28,7 @@ def create
 end
     
 def update
-    g = App.new
+    g = App.find_by_id(params['id'])
     g.facebook = params['facebook']
     g.name = params['name']
     g.memberstatus= params['name']
