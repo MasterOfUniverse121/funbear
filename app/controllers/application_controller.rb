@@ -39,5 +39,10 @@ def update
     g.save
     redirect_to "/funbear/#{g.id}"
 end
+  
+def destroy
+  g = App.find_by_id(params['id'])
+  g.destroy
+end
 end
 
