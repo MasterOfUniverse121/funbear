@@ -18,7 +18,7 @@ def create
     g = App.new
     g.facebook = params['facebook']
     g.name = params['name']
-    g.memberstatus= params['name']
+    g.memberstatus= params['memberstatus']
     g.picture = params['picture']
     g.bio = params['bio']
     g.location = params['location']
@@ -31,7 +31,7 @@ def update
     g = App.find_by_id(params['id'])
     g.facebook = params['facebook']
     g.name = params['name']
-    g.memberstatus= params['name']
+    g.memberstatus= params['memberstatus']
     g.picture = params['picture']
     g.bio = params['bio']
     g.location = params['location']
