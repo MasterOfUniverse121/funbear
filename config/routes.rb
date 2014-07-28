@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get '/funbear/:id/edit' => 'application#edit'
   get '/update_user/:id' => 'application#update'
   get '/funbear/:id/destroy' => 'application#destroy'
+  get '/funbear' => 'application#index'
 end

@@ -43,6 +43,12 @@ end
 def destroy
   g = App.find_by_id(params['id'])
   g.destroy
+  redirect_to "/funbear"
 end
+  
+def index
+  @app = App.all
+end
+  
 end
 

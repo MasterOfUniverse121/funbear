@@ -1,20 +1,24 @@
 <a href="<%= @app.facebook %>"><h2><b><%= @app.name %></b></h2></a> <p class="pine"><%= @app.memberstatus %>
 <div class="container">
   <div class="row">
-      <div class = "col-md-4"><img src="<%= @app.picture %>" alt="" width="350px" height="250px"></div>
+      <div class = "col-md-4"><img src="<%= @app.picture %>" alt="" width="350px" height="350px"></div>
  
-    <div class="col-md-8"> <p><%= @app.bio %></p>
+    <div class="col-md-8"> 
+      <b>Bio: </b><p><%= @app.bio %></p>
       <br>
+      <p><b>Location: </b><%= @app.location %></p>
       <br>
-      <p><b>Location:</b><%= @app.location %></p>
-      <br>
-      <p><b>Completion:</b></p>
+      <p><b>Completion: </b></p>
       <div id="progress">
         <div style="width:<%= @app.completion %>;"></div>
       </div>
+      <button>
       <a href = "/funbear/<%= @app.id %>/edit">Edit</a>
+      </button>
       <br>
+      <button>
       <a href="/funbear/<%= @app.id %>/destroy">Delete</a>
+      </button>
     </div>
   </div>
 </div>
