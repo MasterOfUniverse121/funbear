@@ -25,7 +25,7 @@ def create
 end
     
 def update
-  @app = App.find_by(id: params['id'])
+    @app = App.find_by(id: params['id'])
     @app.facebook = params['facebook']
     @app.name = params['name']
     @app.memberstatus= params['memberstatus']
