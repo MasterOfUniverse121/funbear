@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get '/sessions/new' => 'sessions#new'
+  get '/sessions/create' => 'sessions#create'
   #Create
   get '/new_user' => 'apps#new'
   get '/create_user' => 'apps#create'
